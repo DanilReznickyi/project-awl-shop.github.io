@@ -1,0 +1,49 @@
+.contacts {
+  margin: 100px 0 100px 0;
+}
+.contact-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.1;
+}
+#feedbackForm {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: auto;
+}
+.form_input,
+.form_textarea {
+  background: none;
+  border: 1px solid #767676;
+  color: #fff;
+  padding: 20px 30px;
+  margin: 0 0 10px 0;
+}
+#errorMessages p {
+  margin: 0;
+}
+.form_btn {
+  padding: 10px 20px;
+  background-color: #5d4a41;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  margin: 10px 0 0 0;
+	transition: background-color 0.5s ease;
+}
+.form_btn:hover {
+  padding: 10px 20px;
+  background-color: #b6907e;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+.error-message {
+  color: red;
+}

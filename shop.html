@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/shop.css">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Shop Page</title>
+</head>
+<body>
+	<header id="header">
+
+		<div class="container">
+			<div id="productModal" class="modal">
+			</div>
+			<div class="popup-overlay" id="popupOverlay">
+				<div class="popup-content">
+					<h3 class="section_title">Login</h3>
+						<button class="close-btn" onclick="closePopup()">X</button>
+						<form id="loginForm">
+								<input class="popup-input" type="text" id="username" name="username" required placeholder="Login">
+								<input class="popup-input" type="password" id="password" name="password" required placeholder="Password">
+								<button class="popup-button" type="button" onclick="login()">Sign In</button>
+						</form>
+				</div>
+		</div>
+			<div class="header_sub">
+					<h6>Custom Logo Watches & More, Free Shipping & Returns</h6>
+					<nav class="sub_menu">
+						<ul>
+							<li>
+								<button class="shopping">
+									<img src="img/cart.png">
+									<span class="quantity">0</span>
+							</button>
+							</li>
+							<li>
+								<button id="userButton" onclick="openPopup()">
+									<img src="img/user.png" alt="user">
+							</button>
+							</li>
+						</ul>
+					</nav>
+			</div>
+			<div class="header_content">
+				<div class="header_content_top">
+					<div class="logo">
+						<h3 class="logo_text">ALW Logo</h3>
+						<h6 class="logo_subtext">American Logo Watch</h6>
+					</div>
+					<nav class="content_menu">
+						<ul>
+							<li>
+								<a class="menu_item" href="index.html">Home</a>
+							</li>
+							<li>
+								<a class="menu_item active_menu" href="shop.html">Shop</a>
+							</li>
+							<li>
+								<a class="menu_item " href="faqs.html">Faqs</a>
+							</li>
+							<li>
+								<a class="menu_item" href="contact.html">Contact</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="tel">
+						<img src="img/tel.png" alt="tel">
+						<a href="tel:+18008626772">1 (800) 862 6772</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="main_shop">
+		<div class="container">
+		<h3 class="section_title">Shop</h3>
+		<div class="list">
+          
+		</div>
+</div>
+<div class="card">
+		<h1>Card</h1>
+		<ul class="listCard">
+		</ul>
+		<div class="checkOut">
+				<div class="total">0</div>
+				<div class="closeShopping">Close</div>
+		</div>
+</div>
+</div>
+</main>
+	<footer id="footer">
+		<div class="container">
+			<div class="footer_wrapper">
+				<div class="footer_logo">
+					<h3 class="footer_title">ALW Logo</h3>
+					<h6 class="logo_subtext">American Logo Watch</h6>
+				</div>
+				<nav class="footer_menu">
+					<h3 class="footer_title">Menu</h3>
+					<ul>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="shop.html">Shop</a>
+						</li>
+						<li>
+							<a href="faqs.html">Faqs</a>
+						</li>
+						<li>
+							<a href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="contact">
+					<h3 class="footer_title">Sign Up For Our Newsletter</h3>
+					<input type="text" id="emailInput" placeholder="Enter your email">
+					<button class="footer_btn" onclick="validateEmail()">Send</button>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/cart.js"></script>
+	<script src="js/login.js"></script>
+	<script src="js/regex-email.js"></script>
+</body>
+</html>

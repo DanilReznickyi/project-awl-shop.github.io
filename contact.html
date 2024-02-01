@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&family=Poppins:wght@400;500;600&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/contacts.css">
+	<title>Contact Page</title>
+</head>
+<body>
+	<header id="header">
+		<img class="contact-bg" src="img/bg-2.png" alt="">
+		<div class="container">
+			<div class="popup-overlay" id="popupOverlay">
+				<div class="popup-content">
+					<h3 class="section_title">Login</h3>
+						<button class="close-btn" onclick="closePopup()">X</button>
+						<form id="loginForm">
+								<input class="popup-input" type="text" id="username" name="username" required placeholder="Login">
+								<input class="popup-input" type="password" id="password" name="password" required placeholder="Password">
+								<button class="popup-button" type="button" onclick="login()">Sign In</button>
+						</form>
+				</div>
+		</div>
+			<div class="header_sub">
+					<h6>Custom Logo Watches & More, Free Shipping & Returns</h6>
+					<nav class="sub_menu">
+						<ul>
+							<!-- <li>
+								<button href="#">
+									<img src="img/cart.png" alt="cart">
+									<span class="cart-num hide"></span>
+								</button>
+							</li> -->
+							<li>
+								<button id="userButton" onclick="openPopup()">
+									<img src="img/user.png" alt="user">
+							</button>
+							</li>
+						</ul>
+					</nav>
+			</div>
+			<div class="header_content">
+				<div class="header_content_top">
+					<div class="logo">
+						<h3 class="logo_text">ALW Logo</h3>
+						<h6 class="logo_subtext">American Logo Watch</h6>
+					</div>
+					<nav class="content_menu">
+						<ul>
+							<li>
+								<a class="menu_item" href="index.html">Home</a>
+							</li>
+							<li>
+								<a class="menu_item" href="shop.html">Shop</a>
+							</li>
+							<li>
+								<a class="menu_item" href="faqs.html">Faqs</a>
+							</li>
+							<li>
+								<a class="menu_item active_menu" href="#">Contact</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="tel">
+						<img src="img/tel.png" alt="tel">
+						<a href="#" type="tel">1 (800) 862 6772</a>
+					</div>
+				</div>
+			</div>
+	</header>
+	<main>
+		<div class="container">
+			<section class="contacts">
+				<h2 class="section_title">Contacts</h2>
+				<form id="feedbackForm">
+					<label for="firstName">First Name:</label>
+					<input class="form_input" type="text" id="firstName" name="firstName" required placeholder="First Name:">
+			
+					<label for="lastName">Last Name:</label>
+					<input class="form_input" type="text" id="lastName" name="lastName" required placeholder="Last Name:">
+			
+					<label for="phone">Phone:</label>
+					<input class="form_input" type="text" id="phone" name="phone" pattern="\d+" placeholder="Only digits allowed" required>
+			
+					<label for="email">Email:</label>
+					<input class="form_input" type="email" id="email" name="email" required placeholder="Email:">
+			
+					<label for="comment">Comment:</label>
+					<textarea class="form_textarea" id="comment" name="comment" rows="4" required placeholder="Comment:"></textarea>
+			
+					<button class="form_btn" type="submit">Submit</button>
+				</form>
+			
+				<div id="errorMessages" class="error-message"></div>
+			</section>
+		</div>
+		</div>
+	</main>
+	<footer id="footer">
+		<div class="container">
+			<div class="footer_wrapper">
+				<div class="footer_logo">
+					<h3 class="footer_title">ALW Logo</h3>
+					<h6 class="logo_subtext">American Logo Watch</h6>
+				</div>
+				<nav class="footer_menu">
+					<h3 class="footer_title">Menu</h3>
+					<ul>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="shop.html">Shop</a>
+						</li>
+						<li>
+							<a href="faqs.html">Faqs</a>
+						</li>
+						<li>
+							<a href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="contact">
+					<h3 class="footer_title">Sign Up For Our Newsletter</h3>
+					<input type="text" id="emailInput" placeholder="Enter your email">
+					<button class="footer_btn" onclick="validateEmail()">Send</button>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/contact.js"></script>
+	<script src="js/login.js"></script>
+	<script src="js/regex-email.js"></script>
+</body>
+</html>
